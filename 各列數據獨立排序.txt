@@ -1,0 +1,7 @@
+sub colsort 
+Set ss = Selection 
+For i = 1 To ss.Columns.Count 
+ss.Columns(i).Sort Key1:=ss.Columns(i), Order1:=xlAscending, Header:=xlNo, _ 
+  Orientation:=xlTopToBottom 
+Next 
+End Sub
